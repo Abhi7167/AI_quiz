@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Quiz Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1> AI Quiz Generator</h1>
+
+    <form action="/start" method="POST">
+
+        <label>Select Difficulty:</label>
+
+        <select name="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+
+        <button type="submit">Start Quiz</button>
+
+    </form>
+</div>
+
+</body>
+</html>

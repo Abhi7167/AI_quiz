@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🎉 Quiz Completed</h1>
+
+    <h2>Your Score: {{ score }}/5</h2>
+
+    <h2>{{ rank }}</h2>
+
+    <a href="/">Play Again</a>
+
+</div>
+
+</body>
+</html>
